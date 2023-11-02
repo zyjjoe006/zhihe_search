@@ -9,20 +9,20 @@ from langchain.schema import (
 import json
 import time
 # 设置search
-os.environ["BING_SUBSCRIPTION_KEY"] = "9ecee9fbd9114de380d7b2fb1e6f77da"
+
 os.environ["BING_SEARCH_URL"] = "https://api.bing.microsoft.com/v7.0/search"
 
 # 设置langsmith
 os.environ['LANGCHAIN_TRACING_V2'] = 'true'
 os.environ['LANGCHAIN_ENDPOINT'] = 'https://api.smith.langchain.com'
-os.environ['LANGCHAIN_API_KEY'] = 'ls__f4869955a22b420eb0b129616a005119'
+
 os.environ['LANGCHAIN_PROJECT'] = 'zhihe'
 
 # 设置openai环境变量
 os.environ["OPENAI_API_TYPE"] = "azure"
 os.environ["OPENAI_API_VERSION"] = "2023-05-15" 
 os.environ["OPENAI_API_BASE"] = "https://zhiexagpt4.openai.azure.com/" 
-os.environ["OPENAI_API_KEY"] = "c684b93fb81a4b9da681d2ba214f7c24"
+
 
 # 初始化模型
 chat = AzureChatOpenAI(
